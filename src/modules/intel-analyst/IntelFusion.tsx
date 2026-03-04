@@ -43,7 +43,7 @@ interface SelectableSourceChip {
   lang: 'nl' | 'en';
 }
 
-function SourceChip({ source, isSelected, onToggle, lang }: SelectableSourceChip) {
+function SourceChip({ source, isSelected, onToggle }: SelectableSourceChip) {
   return (
     <button
       onClick={onToggle}

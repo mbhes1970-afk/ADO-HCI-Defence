@@ -16,7 +16,7 @@ export interface ExportPayload {
   distribution?:  string;
 }
 
-function buildHeader(payload: ExportPayload, lang: 'nl' | 'en'): string {
+function buildHeader(payload: ExportPayload, _lang: 'nl' | 'en'): string {
   const divider = '='.repeat(60);
   const dtg = payload.dtg ?? new Date().toISOString().slice(0, 16).replace('T', ' ') + 'Z';
   return [

@@ -7,7 +7,7 @@ import { useState }            from 'react';
 import { useLanguage, t }      from '../../config/i18n';
 import { useMissionStore }     from '../../store/missionStore';
 import { useAI }               from '../../hooks/useAI';
-import { Card, CardHeader, Panel } from '../../components/ui/Card';
+import { Card } from '../../components/ui/Card';
 import { Badge, ThreatBadge }  from '../../components/ui/Badge';
 import { Button }              from '../../components/ui/Button';
 import { ClassificationBadge } from '../../components/shared/ClassificationBadge';
