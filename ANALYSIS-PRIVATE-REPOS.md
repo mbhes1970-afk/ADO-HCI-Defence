@@ -211,7 +211,26 @@ Architect. plannen:
 **AUTH SYSTEEM:**
 ```
 App.jsx:1617 — // Production: PocketBase auth (when deployed)
-Huidige state: Demo login simulatie (hardcoded user)
+Huidige state: Demo login simulatie met hardcoded credentials:
+  Admin: *@hes-consultancy-international.com / hci2025! (App.jsx:1601-1603)
+  Partner: partner@medvision.ai / partner123 (App.jsx:1608)
+  Viewer: viewer@cybershield.com / viewer123 (App.jsx:1609)
+  Rollen: admin, partner, viewer, guest
+  Multi-tenant: tenant_id in demo user objects (App.jsx:2380-2382)
+```
+
+**API PROBLEEM:**
+```
+App.jsx:542 — fetch("https://api.anthropic.com/v1/messages", ...)
+  Claude API call ZONDER API key header — werkt NIET in productie
+  Moet via Netlify proxy of VITE_* env var
+```
+
+**EXTERNE LINKS:**
+```
+App.jsx:1789 — https://cmo-fmo.hes-consultancy-international.com (CMO/FMO add-on)
+App.jsx:1804 — https://app.lemlist.com (cold email outreach, alleen link, geen API)
+App.jsx:6    — app.hes-consultancy-international.com (beoogde deployment URL)
 ```
 
 **ENV VARS VEREIST:**
