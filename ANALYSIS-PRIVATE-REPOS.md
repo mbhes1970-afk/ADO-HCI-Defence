@@ -212,7 +212,7 @@ Architect. plannen:
 ```
 App.jsx:1617 — // Production: PocketBase auth (when deployed)
 Huidige state: Demo login simulatie met hardcoded credentials:
-  Admin: *@hes-consultancy-international.com / hci2025! (App.jsx:1601-1603)
+  Admin: mbhes@hes-consultancy-international.com / demo2026 (App.jsx:1601-1602)
   Partner: partner@medvision.ai / partner123 (App.jsx:1608)
   Viewer: viewer@cybershield.com / viewer123 (App.jsx:1609)
   Rollen: admin, partner, viewer, guest
